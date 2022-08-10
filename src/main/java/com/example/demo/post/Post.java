@@ -1,6 +1,6 @@
-package post;
+package com.example.demo.post;
 
-import user.User;
+import com.example.demo.user.User;
 
 public class Post {
 
@@ -8,6 +8,14 @@ public class Post {
 	private String postDate;
 	private User user;
 	private String details;
+	
+	public Post(String id, String postDate, User user, String details) {
+		super();
+		this.id = id;
+		this.postDate = postDate;
+		this.user = user;
+		this.details = details;
+	}
 	public String getId() {
 		return id;
 	}
